@@ -1,0 +1,215 @@
+@import "variables";
+
+.outer-study-main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  font-family: $nunito;
+  background-color: $off-white;
+}
+
+.card{
+  font-size: 22px;
+}
+
+.progress-sidebar-outer{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $off-black;
+  color: $off-white;
+  >a{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .deck-title-header{
+    background-color: $gray;
+    align-self: flex-start;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    overflow: ellipsis;
+    span{
+      align-self: center;
+      color: $light-gray;
+      margin: 12px;
+      font-size: 18px;
+      span{
+        color: white;
+      }
+    }
+  }
+}
+
+.card-study-outer{
+  width: 70%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  header{
+    text-align: right;
+    width: 100%;
+  }
+  main{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+    border-radius: 2px;
+    background-color: white;
+    div{
+      // border: 1px solid gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 50px;
+    }
+  }
+}
+
+.reveal-rate-btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: $reveal-gray;
+  width: 100%;
+  height: 10vh;
+  div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.25);
+    color: $reveal-blue;
+    .rating-1{
+      background-color: $rating-1-color;
+      color: $off-white;
+    }
+    .rating-2{
+      background-color: $rating-2-color;
+      color: $off-white;
+    }
+    .rating-3{
+      background-color: $rating-3-color;
+      color: $off-white;
+    }
+    .rating-4{
+      background-color: $rating-4-color;
+      color: $off-white;
+    }
+    .rating-5{
+      background-color: $rating-5-color;
+      color: $off-white;
+    }
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.progress-nav-buttons{
+  padding: 10px 40px;
+  background-color: #29A5DC;
+  text-decoration: none;
+  font-style: none;
+  border-radius: 3px;
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+  &:hover{
+    cursor: pointer;
+    background-color: $light-blue;
+  }
+}
+
+.rc-progress-circle{
+  width: 70%;
+}
+
+.progress-stats{
+  position: relative;
+  margin: 0;
+  bottom: 17vh;
+  left: 1vw;
+  font-size: 48px;
+  font-weight: lighter;
+  font-family: $nunito;
+}
+
+.card-buckets{
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 25px 50px;
+  box-sizing: border-box;
+  div{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    svg{
+      width: inherit;
+      height: inherit;
+      margin-left: 15px;
+    }
+  }
+}
+
+.mastered-fraction-container{
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  font-weight: lighter;
+  padding: 20px 50px 25px 50px;
+  background-color: $gray;
+  .level-1{
+    color: $rating-1-color;
+  }
+  .level-2{
+    color: $rating-2-color;
+  }
+  .level-3{
+    color: $rating-3-color;
+  }
+  .level-4{
+    color: $rating-4-color;
+  }
+  .level-5{
+    color: $rating-5-color;
+  }
+  div{
+    display: flex;
+    flex-direction: row;
+    small{
+      font-size: 12px;
+      position: relative;
+      top: 5px;
+    }
+    .denominator{
+      position: relative;
+      bottom: 3px;
+      left: 8px;
+    }
+  }
+  p{
+    font-size: 48px;
+    font-family: $nunito;
+    font-weight: lighter;
+  }
+  strong{
+    font-size: 48px;
+  }
+}

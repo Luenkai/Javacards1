@@ -1,0 +1,46 @@
+@import "variables";
+
+.home-inner{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 60px;
+  width: 90vw;
+  padding: 5vh 5vw 5vh 5vw;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.home-outer {
+    background: url(https://res.cloudinary.com/dq4hfogl5/image/upload/v1489680494/031715-students_k3becg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 62px;
+    width: 100vw;
+    height: calc(100vh - 62px);
+}
+
+.greetHeader {
+  font-family: 'Nunito', sans-serif;
+  width: 100%;
+  color: $off-white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 100;
+  h1{
+    margin: 15px;
+    font-size: 64px;
+  }
+  h3{
+    margin: 15px;
+    font-size: 48px;
+  }
+  a:hover{
+    color: $reveal-blue;
+    // text-decoration: underline;
+  }
+}

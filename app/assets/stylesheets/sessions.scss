@@ -1,0 +1,86 @@
+@import "variables";
+
+.auth-input-form {
+  text-align: center;
+  height: 200px;
+  color: black;
+  overflow:auto;
+  padding-bottom: 10px;
+  h1{
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: $nunito;
+  }
+  label{
+    font-family: $nunito;
+    font-size: 16px;
+  }
+  .session-submit-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 15px 0px 15px;
+    input, button{
+      background-color: $off-white;
+      padding: 5px 10px 5px 10px;
+      border: 1px solid black;
+      font-size: 16px;
+      font-weight: normal;
+      
+      align-self: center;
+      height: 30px;
+      width: 40%;
+      &:hover{
+        cursor: pointer;
+        border: 2px solid black;
+      }
+    }
+  }
+}
+
+
+.ReactModal__Content .ReactModal__Content--after-open {
+  height: 80px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.errors {
+  color: red;
+  font-size: 12px;
+}
+
+.close-modal-button{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-box {
+   background: $off-white;
+   opacity: .7;
+   color: #fdfdfd;
+   font-size: 21px;
+   font-weight: bold;
+   line-height: 1.3em;
+   border: 4px solid $light-blue;
+   font-weight: normal;
+   display: flex;
+   flex-direction: column;
+}
+
+.username-input {
+  border: 2px solid gray;
+  margin: 8px;
+}
+
+.password-input {
+  border: 2px solid gray;
+  margin: 8px;
+}
+
+.auth-input-form label{
+  padding-right: 5px;
+}

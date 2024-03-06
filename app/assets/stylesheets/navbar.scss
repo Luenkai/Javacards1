@@ -1,0 +1,133 @@
+@import "variables";
+
+.site-logo {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  left: 34px;
+  top: 3px;
+  i{
+    color: $reveal-blue;
+    height: 30px;
+    width: 30px;
+  };
+}
+
+.fa-rotate-35 {
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
+#auth-modal{
+  border-radius: 15px;
+}
+
+.top-menu {
+  background: #333333;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid $orange;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+nav{
+  display: flex;
+  margin: 10px;
+  ul{
+    list-style: none;
+    display: inline;
+  }
+}
+
+nav.left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.site-title {
+  text-decoration: none;
+  font-family: $nunito;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-right: 10px;
+  &:hover ~ i#bulb:after{
+    color: #f6ff00;
+  }
+}
+
+nav.right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top: 9px;
+}
+
+nav li {
+  display: inline;
+  padding: inherit;
+  margin: inherit;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+nav li:hover {
+  display: inline;
+  padding: inherit;
+  color: white;
+  text-decoration: none;
+}
+
+.browse-link{
+  margin-left: 5px;
+  i{
+    padding-right: 3px;
+  }
+}
+
+nav li div {
+  display: inline;
+  padding: inherit;
+  margin: inherit;
+  color: white;
+  text-decoration: none;
+}
+
+nav li a{
+  color: white;
+  text-decoration: none;
+  &:hover{
+    color: $light-blue;
+  }
+}
+
+button {
+  background-color: #00AADE;;
+  font-family: $nunito;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0px;
+  border-radius: 2px;
+  &:hover{
+    background-color: $lighter-blue;
+    cursor: pointer;
+  }
+}
+
+nav.right #last{
+  padding-right: 20px;
+}

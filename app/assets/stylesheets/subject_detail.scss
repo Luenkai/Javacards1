@@ -1,0 +1,97 @@
+@import "variables";
+
+.subject-detail-outer{
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: row;
+  width: 70vw;
+  height: 100%;
+  background-color: $white;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  .subject-detail-inner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .deck-title{
+      width: 65%;
+    }
+    .no-subjects-message{
+      a{
+        font-size: 16px;
+        color: $reveal-blue;
+        text-decoration: underline;
+      }
+    }
+    .deck-options{
+      border-radius: 2px;
+      background-color: $light-blue;
+      color: white;
+      .deck-link-wrapper{
+        color: $light-blue;
+        &:hover{
+          color: white;
+          box-shadow: 1px;
+        }
+      }
+    }
+  }
+  .current-learners-outer{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin-left: 5px;
+    .current-learners{
+      // border: 1px solid gray;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      ul{
+        list-style: none;
+        li{
+          color: $off-black;
+        }
+      }
+    }
+  }
+}
+
+.subject-title-header{
+  display: flex;
+  justify-content: space-between;
+  h1{
+    color: $orange;
+    font-size: 36px;
+    margin: 5px 0px 15px 5px;
+  }
+  button{
+    align-self: center;
+    color: white;
+    &:hover{
+      background-color: #1E86B4;
+    }
+  }
+  .unfollow-subject-btn{
+    background-color: $lighter-blue;
+    box-shadow: 0 3px 3px $light-blue;
+    top: 3px;
+  }
+  .follow-subject-btn{
+    background-color: $light-blue;
+    color: white;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 2px 3px $light-blue;
+    top: 3px;
+    i{
+      align-self: center;
+      padding-right: 5px;
+    }
+    &:hover{
+      background-color: #1E86B4;
+    }
+    &:active{
+    }
+  }
+}
